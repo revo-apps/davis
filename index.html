@@ -183,7 +183,7 @@
                 // Request fullscreen
                     const elem = document.documentElement;
                     if (elem.requestFullscreen) {
-                        elem.requestFullscreen().catch(() => { });
+                        elem.requestFullscreen();
                     } else if (elem.webkitRequestFullscreen) {
                         elem.webkitRequestFullscreen();
                     } else if (elem.mozRequestFullScreen) {
