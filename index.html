@@ -179,7 +179,7 @@
 
                 // Show the black screen first
                 overlay.classList.add('active');
-
+                setTimeout(() => {
                 // Request fullscreen
                     const elem = document.documentElement;
                     if (elem.requestFullscreen) {
@@ -191,7 +191,7 @@
                  } else if (elem.msRequestFullscreen) {
                     elem.msRequestFullscreen();
                 }
-
+                }, 0)
                 // Show the prank message after 15 seconds with no fade-in
                 setTimeout(() => {
                    message.classList.add('show');
