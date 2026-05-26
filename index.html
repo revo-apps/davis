@@ -181,7 +181,6 @@
                 overlay.classList.add('active');
 
                 // Request fullscreen
-                setTimeout(() => {
                     const elem = document.documentElement;
                     if (elem.requestFullscreen) {
                         elem.requestFullscreen().catch(() => { });
@@ -192,7 +191,6 @@
                  } else if (elem.msRequestFullscreen) {
                     elem.msRequestFullscreen();
                 }
-                }, 0);
 
                 // Show the prank message after 15 seconds with no fade-in
                 setTimeout(() => {
