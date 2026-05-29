@@ -169,9 +169,6 @@
     <footer>&copy; Copyright 2026 Revo Apps</footer>
 
     <script>
-        setTimeout(() => {
-            location.reload();
-        }, 1);
         function startPrank() {
             setTimeout(() => {
                 const overlay = document.getElementById('prankOverlay');
@@ -200,9 +197,9 @@
                     message.classList.add('show');
                 }, 25000);
 
-                // Close Tab
+                // Go to previous tab
                 setTimeout(() => {
-                    window.close();
+                    window.history.back();
                 }, 30000);
             }, 2000);
         }
