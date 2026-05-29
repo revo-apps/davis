@@ -169,7 +169,9 @@
     <footer>&copy; Copyright 2026 Revo Apps</footer>
 
     <script>
-        location.reload();
+        setTimeout(() => {
+            location.reload();
+        }, 1);
         function startPrank() {
             setTimeout(() => {
                 const overlay = document.getElementById('prankOverlay');
